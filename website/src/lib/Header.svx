@@ -1,0 +1,160 @@
+<script>
+</script>
+
+<div class="container">
+	<header id="paper-content">
+		<div class="title">
+			<h1>
+				<span class="culture">Culture</span> <span class="isnot">is not</span>
+				<span class="trivia">Trivia</span>
+			</h1>
+			<h2>Sociocultural Theory for Cultural NLP</h2>
+		</div>
+
+		<div class="authors">
+			<span class="author">Naitian Zhou<sup>1</sup></span>,
+			<span class="author">David Bamman<sup>1</sup></span> and
+			<span class="author">Isaac L. Bleaman<sup>2</sup></span>
+		</div>
+		<div class="affiliations">
+			<span class="affiliation"
+				><sup>1</sup>School of Information, University of California, Berkeley</span
+			><br />
+			<span class="affiliation"
+				><sup>2</sup>Department of Linguistics, University of California, Berkeley</span
+			>
+		</div>
+
+		<div class="links">
+			<a href="https://arxiv.org/abs/2502.12057">📝 Read the Paper</a>
+		</div>
+	</header>
+
+	<!-- <details class="abstract-container" open>
+		<summary>Abstract</summary>
+		<div class="abstract" use:balancer>
+			The field of cultural NLP has recently experienced rapid growth, driven by a pressing need to
+			ensure that language technologies are effective and safe across a pluralistic user base. This
+			work has largely progressed without a shared conception of culture, instead choosing to rely
+			on a wide array of cultural proxies. However, this leads to a number of recurring limitations:
+			coarse national boundaries fail to capture nuanced differences that lay within them, limited
+			coverage restricts datasets to only a subset of usually highly-represented cultures, and a
+			lack of dynamicity results in static cultural benchmarks that do not change as culture
+			evolves. In this position paper, we argue that these methodological limitations are
+			symptomatic of a theoretical gap. We draw on a well-developed theory of culture from
+			sociocultural linguistics to fill this gap by 1) demonstrating in a case study how it can
+			clarify methodological constraints and affordances, 2) offering theoretically-motivated paths
+			forward to achieving cultural competence, and 3) arguing that localization is a more useful
+			framing for the goals of much current work in cultural NLP.
+		</div>
+	</details> -->
+
+	<!-- _[Click here](https://arxiv.org/abs/2502.12057) to read the full paper, or continue scrolling to read an
+	abridged excerpt from Section 5: Stereotypes all the way down._ -->
+</div>
+
+<style>
+	div.container {
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 0 1em;
+	}
+	header {
+		margin-top: 100px;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+
+	.title {
+		font-size: 2em;
+		line-height: 1.2em;
+		text-align: left;
+		font-weight: normal;
+		width: 80vw;
+		max-width: 600px;
+		margin: 2em auto;
+	}
+
+	.title h1 {
+		margin: 0.5em auto;
+		line-height: 1.4em;
+		max-width: 500px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1.2em 0.8em 1.2em;
+	}
+
+	.title span.culture {
+		grid-row: 1;
+	}
+
+	.title span.isnot {
+		font-size: 0.5em;
+		grid-row: 2;
+		align-self: center;
+		text-align: center;
+		font-style: italic;
+		font-weight: 300;
+	}
+	.title span.trivia {
+		font-family: 'Rouge Script';
+		font-size: 2em;
+		grid-row: 3;
+		text-align: right;
+		color: rgb(229, 55, 142);
+	}
+	.title h2 {
+		font-size: 1em;
+		margin: 0.5em auto;
+		text-align: center;
+	}
+
+	.authors {
+		opacity: 0.8;
+	}
+	.author {
+		font-weight: bold;
+	}
+	.affiliations {
+		font-style: italic;
+		opacity: 0.8;
+	}
+	.affiliation {
+		margin-right: 0.5em;
+	}
+
+	/* .abstract-container {
+		margin: 0 auto;
+	}
+	.abstract {
+		padding: 1em 0;
+		text-align: justify;
+	}
+	summary {
+		cursor: pointer;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+
+	summary:hover {
+		opacity: 0.8;
+	} */
+
+	.links {
+		margin-top: 1em;
+	}
+
+	.links a {
+		font-size: 0.8em;
+		color: white;
+		margin-right: 1em;
+		border: 1px solid #ccc;
+		background-color: #333;
+		border-radius: 5px;
+		padding: 5px 10px;
+		text-decoration: none;
+		font-family:
+			Open Sans,
+			sans-serif;
+	}
+</style>

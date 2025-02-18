@@ -1,0 +1,152 @@
+<script>
+	import Header from '$lib/Header.svx';
+    import Blockquote from '$lib/Blockquote.svelte';
+    import IndexicalityScrolly from '$lib/IndexicalityScrolly.svelte';
+
+</script>
+
+<Header></Header>
+
+<article>
+
+The field of cultural NLP has recently experienced rapid growth, driven by a
+pressing need to ensure that the language technologies we are building are
+effective and safe across a pluralistic user base.
+
+This work has largely progressed without a shared conception of culture, instead
+choosing to rely on a wide array of cultural proxies. In this position paper, we
+show how *sociocultural linguistics* can offer a useful theoretical framework
+through which we can analyze the goals and methods of cultural NLP work.
+
+On this website is a brief overview of the case study presented in section 5 of the
+paper, with pointers to other sections, but please take some time to [read the full paper](https://arxiv.org/abs/2502.12057) when you have a
+chance (it's worth it, or your money back!).
+
+## Stereotypes all the way down
+
+One goal of cultural NLP is to build technologies that are __adaptive__ to
+different cultural audiences; technologies should be responsive to cultural
+context when designing their output. This has resulted in a wide body of work
+that constructs datasets and benchmarks to evaluate the "cultural knowledge" of
+language models.
+
+A second goal is to build technologies that are __inclusive__ of many different
+cultures. These two concerns lead to work that focuses on mining for cultural
+knowledge from large corpora of unstructured text. Generally, these corpora are
+discussion fora or social media platforms where users engage in
+culturally-centered discourse (for example, sharing moments of culture shock).
+
+> We lay out a taxonomy of high-level goals (which include adaptiveness and
+inclusivity) for cultural NLP work in [Section 2 of the
+paper](https://arxiv.org/pdf/2502.12057#page=2.80).
+
+However, in many of these papers, authors note the dangerous potential of
+extracting biased or stereotyping information. How should we understand the
+epistemic status of these surfaced facts as cultural knowledge? We apply
+indexical theory, a concept from sociocultural linguistics, to demonstrate that
+these works, in fact, can _only_ learn stereotypes.
+
+> [In Section 3](https://arxiv.org/pdf/2502.12057#page=3.50), we
+survey the common self-stated limitations of current cultural NLP work.
+
+__Indexical theory__ is describes a mechanism through which cultural identity can be
+constructed; it is the process of drawing links between linguistic (and other)
+forms and social meaning. These can play into cultural language ideologies,
+construct stances local to specific interactions, contain overt references to
+identity, and more. It provides an explanation for how we can use different
+kinds of style to _evoke_ different cultural identities in a way that's
+recognizable to our interlocutors.
+
+> We provide an overview of indexical theory and other concepts from
+sociocultural linguistics in [Section 4.2 of the paper](https://arxiv.org/pdf/2502.12057#page=4.71).
+
+We can view the goal of these data-mining papers to be the construction of an
+indexical field. Cultural facts aggregatd by these systems generally resemble
+the form: *In __cultural group__, __belief__ is widely accepted*.
+
+This is effectively a mapping between the space of beliefs and the cultural
+groups that they index.
+
+<IndexicalityScrolly/>
+
+The implication of this idea is that works which study cultural discourse are
+primarily studying the stereotypes embedded in the ideologies of the groups that
+generated this data, and only <strong>incidentally</strong> studying the
+cultures that are the objects of discourse.
+
+In fact, sociolinguist William Labov defines stereotype exactly as the
+linguistic forms which are subject to metapragmatic discussion.
+
+<Blockquote author="William Labov" source="Sociolinguistic Patterns (1973)"> A
+small number of sociolinguistic markers rise to overt social consciousness, and
+become stereotypes. There may or may not be a fixed relation between such
+stereotypes and actual usage.
+</Blockquote>
+
+By applying indexical theory, we gain _clarity_ on what we are studying when we
+study culture in this way. We find the subjects of study to be different from
+what we initially assumed: instead of learning about a diverse set of
+international cultures, we are actually learning the world-view of the text
+authors, situated in a specific interactional context (like posting about
+culture shock.)
+
+This isn't just semantics. Instead, indexical theory clarifies the extent to
+which these datasets are useful, and what we are concerned about when we worry
+about stereotypes.
+
+Higher-order indices _can_ be useful because their meanings come from
+lower-order ones. But higher-order indices might persist even when lower-order
+ones are no longer as salient. It is in these cases that stereotypes might be
+_harmful_.
+
+## Where do we go from here?
+
+In the full paper, we build on this case study and other pieces of sociocultural
+linguistic theory to argue that culture is a complex, dynamic system through
+which sense-making occurs. We highlight large gaps, both methodological and
+theoretical, the prevent us from achieving __cultural competence__, and
+potential future work that these gaps motivate.
+
+But we also make the argument that __localization__ might be a more useful
+framing for much of the immediate work in cultural NLP, and explore how this
+framing makes some of the goals in cultural NLP more tractable by focusing on
+situated application settings.
+
+> You can find more about both __cultural competence__ and __localization__ in
+[Section 6 of the paper](https://arxiv.org/pdf/2502.12057#page=6.27).
+
+We hope you'll take the time to [read the full
+paper](https://arxiv.org/abs/2502.12057) and let us know what you think!
+
+
+</article>
+
+<style>
+    article {
+        margin: 0 auto;
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 1.8;
+
+        text-align: justify;
+        margin-bottom: 200px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    blockquote {
+        margin: 1em auto;
+        font-size: 0.8em;
+        padding: 0em 1em;
+        border-left: 4px solid #ccc;
+        max-width: 80%;
+    }
+
+    strong {
+        color: rgb(229, 55, 142);
+    }
+
+</style>
